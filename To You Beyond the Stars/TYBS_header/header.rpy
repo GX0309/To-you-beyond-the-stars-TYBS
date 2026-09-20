@@ -3,6 +3,6 @@ init -990 python:
         author="gx",
         name="To You Beyond the Stars",
         description="包含原创话题, 诗歌以及开放世界系统",
-        version='0.2.13',
+        version='1.0.0',
         settings_pane= None
     )

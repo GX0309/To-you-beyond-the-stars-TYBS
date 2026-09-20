@@ -19,10 +19,10 @@ label ow_find_new:
 label ow_residental_02:
     window hide
     show black zorder 100 with Dissolve(5.0, alpha=True)
-    hide black
     scene bg residential_02
+    hide black
     if persistent.find_new == 2:
-        show moika 6j_gowm at t11
+        show moika 3j_gowm at t11
         with dissolve
         m "哇! 全新的景色!"
         show monika 7t_gowm at t11
@@ -31,7 +31,7 @@ label ow_residental_02:
         jump park
 
     if persistent.find_new >= 3:
-        show monika 9b_gowm at t11
+        show monika 10b_gowm at t11
         with dissolve
         m "啊, 树先生, 你们好啊!"
         show monika 5a_gowm at t11
@@ -42,8 +42,8 @@ label ow_residental_02:
 label park:
     window hide
     show black zorder 100 with Dissolve(5.0, alpha=True)
-    hide black
     scene bg park
+    hide black
     $ persistent.park_count += 1
     if persistent.park_count == 1:
         show monika 5j_gowm at t11
@@ -98,7 +98,7 @@ label ow_park_menu_2:
             jump ow_mc_house
 
         "往前走走看?":
-            jump road
+            jump ow_road
 
         "回太空教室":
             m "好的!"
@@ -122,10 +122,10 @@ label ow_find_lake:
             pass
     window hide
     show black zorder 100 with Dissolve(5.0, alpha=True)
-    hide black
-    scene bg park_lake
     stop music fadeout 1.0
     play music "Submods/To You Beyond the Stars/music/park_lake.mp3"
+    scene bg park_lake
+    hide black
     show monika 5a_gowm at t11
     with dissolve
     m "[player]快看, 湖水真漂亮, 不是么?"
@@ -151,8 +151,8 @@ label ow_find_lake:
 label ow_lake_menu:
     window hide
     show black zorder 100 with Dissolve(5.0, alpha=True)
-    hide black
     scene bg park_lake
+    hide black
     stop music fadeout 1.0
     play music "Submods/To You Beyond the Stars/TYBS_Open World/music/park_lake.mp3" fadein 1.0
     menu:
@@ -225,29 +225,237 @@ label ow_road:
     show black zorder 100 with Dissolve(5.0, alpha=True)
     stop music fadeout 1.0
     play music "Submods/To You Beyond the Stars/TYBS_Open World/music/street_school.mp3"
-    hide black with Dissolve(2.o, alpha=True)
-    scene bg road
+    scene bg road_02
+    hide black
+    $ persistent.count += 1
     if persistent.road_count == 1:
         jump ow_road_01
     else:
         jump ow_road_02
 
 label ow_road_01:
-    show monika 7t_gowm at t11
-    with dissolve
-    m "这里有一条新路!"
-    show monika 8j_gowm at t11
-    with dissolve
-    m "看起来它通向两个地方!"
-    show monika 9b_gowm at t11
-    with dissolve
-    m "[player], 你想往那边走呢?"
-    menu:
-        "去左边吧!":
-            jump ow_playground
+    if persistent.count == 1:
+        show monika 7t_gowm at t11
+        with dissolve
+        m "这里有一条新路!"
+        show monika 8j_gowm at t11
+        with dissolve
+        m "看起来它通向两个地方!"
+        show monika 9b_gowm at t11
+        with dissolve
+        m "[player], 你想往那边走呢?{nw}"
+        menu:
+            m "[player], 你想往那边走呢?{fast}"
+            "去左边吧!":
+                $ persistent.playground = True
+                jump ow_playground
 
-label ow_playground:
-    jump ow_go_back
+            "去右边吧!":
+                $ persistent.playstore = True
+                jump ow_playstore
+
+    else:
+        show monika 3k_gowm at t11
+        with dissolve
+        m "熟悉的分叉小路呢!"
+        m "[player], 你想往哪边走呢?{nw}"
+        menu:
+            m "[player], 你想往哪边走呢?{fast}"
+            "去左边吧!":
+                $ persistent.playground = True
+                jump ow_playground
+
+            "去右边吧!":
+                $ persistent.playstore = True
+                jump ow_playstore
+       
 
 label ow_road_02:
-    jump ow_go_back
+    show monika 3k_gowm at t11
+    with dissolve
+    m "熟悉的分叉小路呢!"
+    m "[player], 你想往哪边走呢?{nw}"
+    menu:
+        m "[player], 你想往那边走呢?{fast}"
+        "去游乐场那边吧!":
+            jump ow_playground
+
+        "去电玩城那边!":
+            jump ow_playstore
+
+label ow_playground:
+    window hide
+    show black zorder 100 with Dissolve(5.0, alpha=True)
+    scene bg play_ground
+    hide black
+    $ persistent.pg_count += 1
+    if persistent.pg_count == 1:
+        show monika 7k_gowm at t11
+        with dissolve
+        m "啊[player], 是游乐园!"
+        show monika 7j_gowm at t11
+        with dissolve
+        m "哇...安静的游乐园是这样子的呢!"
+        show monika 6q_gowm at t11
+        with dissolve
+        m "有些不可思议..."
+        show monika 10k_gowm at t11
+        with dissolve
+        m "不过啊, 这里有点像属于我们二人的秘密基地呢!"
+        show monika 5a_gowm at t11
+        with dissolve
+        m "虽然一个人都没有, 但是我并不感到寂寞哦?"
+        show monika 10b_gowm at t11
+        with dissolve
+        m "因为有你在这里!"
+        show monika 7a_gowm at t11
+        with dissolve
+        m "[player], 你想干点什么?{nw}"
+        jump ow_pg_menu
+    else:
+        show monika 8k_gowm at t11
+        with dissolve
+        m "无人的游乐园!"
+        show monika 7t_gowm at t11
+        with dissolve
+        m "[player], 你想干点什么?{nw}"
+        jump ow_pg_menu
+
+label ow_pg_menu:
+    menu:
+        m "[player], 你想干点什么?{fast}"
+        "查看闸机口":
+            jump ginkgo_bookmark
+
+        "往前走":
+            jump ow_road_03
+
+        "回太空教室":
+            m "好!"
+            m "天, 我们玩得真开心!"
+            jump ow_go_back
+
+label ginkgo_bookmark:
+    show monika 10j_gowm at t11
+    with dissolve
+    m "欸[player], 你看那边!"
+    show monika 7t_gowm at t11
+    with dissolve
+    m "有一片银杏叶落在闸机口旁边了呢!"
+    show monika 5a_gowm at t11
+    with dissolve
+    m "啊, 这个地方应该没有落叶这一说的才对吧?"
+    show monika 3d_gowm at t11
+    with dissolve
+    m "嗯... 真奇怪呢?"
+    show monika 10k_gowm at t11
+    with dissolve
+    m "可惜我不能把这里的东西带回太空教室!"
+    show monika 3t_gowm at t11
+    with dissolve
+    m "如果它变成一枚书签的话, 肯定很好看!"
+    show monika 10b_gowm at t11
+    with dissolve
+    m "走吧[player], 前面还有路呢!"
+    jump ow_road_03
+
+label ow_playstore:
+    window hide
+    show black zorder 100 with Dissolve(5.0, alpha=True)
+    scene bg play_outside
+    hide black
+    show monika 7k_gowm at t11
+    with dissolve
+    m "电玩城!"
+    show monika 5a_gowm at t11
+    with dissolve
+    m "看起来不错呢!"
+    show monika 3b_gowm at t11
+    with dissolve
+    m "我们要不要进去瞧瞧呢?{nw}"
+    menu:
+        m "我们要不要进去瞧瞧呢?{fast}"
+        "好啊":
+            m "我们走!"
+            jump ow_playstore_inside
+            
+        "往前走走吧!":
+            m "嗯!"
+            m "下次一定要来看看哦!"
+            jump ow_road_03
+
+label ow_playstore_inside:
+    window hide
+    show black zorder 100 with Dissolve(5.0, alpha=True)
+    stop music fadeout 1.0
+    play music "Submods/To You Beyond the Stars/TYBS_Open World/music/only u.mp3" fadein 1.0
+    scene bg play_inside
+    hide black 
+    show monika 9k_gowm at t11
+    with dissolve
+    m "[player], 这里有好多游戏机呢?"
+    show monika 5a_gowm at t11
+    with dissolve
+    m "你愿意和我一起玩玩吗?{nw}"
+    menu:
+        m "你愿意和我一起玩玩吗?{fast}"
+        "好啊":
+            jump ow_ps_ok
+
+        "算了吧":
+            m "啊, 好吧!"
+            m "没关系, 我们下次再来!"
+            jump ow_ps_menu
+
+label ow_ps_menu:
+    window hide
+    show black zorder 100 with Dissolve(5.0, alpha=True)
+    stop music fadeout 1.0
+    play music "Submods/To You Beyond the Stars/TYBS_Open World/music/for u.mp3" fadein 1.0
+    scene bg play_outisde
+    hide black 
+    show monika 7t_gowm at t11
+    with dissolve
+    m "又回来了呢?"
+    show monika 5a_gowm at t11
+    with dissolve
+    m "往哪走走吧?{nw}"
+    menu:
+        m "往哪走走吧?{fast}"
+        "回公园":
+            jump park
+
+        "往另一条路走走?":
+            jump ow_road_03
+
+        "我累了, 回去吧":
+            jump ow_go_back
+
+label ow_ps_ok:
+    show monika 6t_gowm at t11
+    with dissolve
+    m "好的!"
+    show monika 3p_gowm at t11
+    with dissolve
+    m "嗯... 让我准备一下..."
+    call updateconsole("launching game.exe", "Error")
+    show monika 3g_gowm at t11
+    with dissolve
+    m "怎么会!"
+    show monika 4f_gowm at t11
+    with dissolve
+    m "我再试一下..."
+    call updateconsole("Restarting...", "Error")
+    call hideconsole
+    show monika 7l_gowm at t11
+    with dissolve
+    m "啊, 看起来这里的游戏机坏了呢..."
+    show monika 3m_gowm at t11
+    with dissolve
+    m "没关系, 也许下一次它就被修好了呢!"
+    show monika 6t_gowm at t11
+    with dissolve
+    m "来吧[player], 我们走!"
+    jump ow_road_03
+
+    

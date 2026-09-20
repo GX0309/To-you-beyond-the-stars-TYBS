@@ -1,5 +1,4 @@
 #monika Sprites
-# Original monika sprites a-r
 # 难绷 这玩意又是改tag又是改路径的 老夫差点在此圆寂
 image monika 1a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/a.png")
 image monika 1b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/b.png")
@@ -20,12 +19,10 @@ image monika 1p_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond t
 image monika 1q_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/q.png")
 image monika 1r_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/r.png")
 
-#New sprites
 image monika 1s_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/s.png")
 image monika 1t_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/t.png")
 
 
-# Original monika sprites a-r
 image monika 2a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/a.png")
 image monika 2b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/b.png")
 image monika 2c_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/c.png")
@@ -45,12 +42,10 @@ image monika 2p_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond t
 image monika 2q_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/q.png")
 image monika 2r_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/r.png")
 
-#New Sprites
 image monika 2s_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/s.png")
 image monika 2t_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/t.png")
 
 
-# Original monika sprites a-r
 image monika 3a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/a.png")
 image monika 3b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/b.png")
 image monika 3c_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/c.png")
@@ -70,14 +65,12 @@ image monika 3p_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond t
 image monika 3q_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/q.png")
 image monika 3r_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/r.png")
 
-#New Sprites
 image monika 3s_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/s.png")
 image monika 3t_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/t.png")
 
 
 
 
-# Original monika sprites a-r
 image monika 4a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/a.png")
 image monika 4b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/b.png")
 image monika 4c_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/c.png")
@@ -97,29 +90,17 @@ image monika 4p_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond t
 image monika 4q_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/q.png")
 image monika 4r_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "monika/r.png")
 
-#New Sprites
 image monika 4s_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/s.png")
 image monika 4t_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/2r.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/t.png")
 
 
 
 
-# Original monika sprites a-b
 image monika 5a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3a.png")
 image monika 5b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3b.png")
 
-#New Sprites
 image monika 5c_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3c.png")
-image monika 5d_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3d.png")
-image monika 5e_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3e.png")
-image monika 5f_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3f.png")
-image monika 5g_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3g.png")
-image monika 5h_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3h.png")
 image monika 5i_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3i.png")
-#image monika 5j_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3j.png")
-#image monika 5k_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/3k.png")
-
-#Hand on hips sprites
 image monika 6a_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/4l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/a.png")
 image monika 6b_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/4l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/b.png")
 image monika 6c_gowm = im.Composite((960, 960), (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/4l.png", (0, 0), "Submods/To You Beyond the Stars/TYBS_Open World/images/monika/1r.png", (0, 0), "monika/c.png")
@@ -252,3 +233,14 @@ image bg play_outside = "Submods/To You Beyond the Stars/TYBS_Open World/images/
 image bg play_inside = "Submods/To You Beyond the Stars/TYBS_Open World/images/bg/play.png"
 image bg coffe_inside = "Submods/To You Beyond the Stars/TYBS_Open World/images/bg/coffe_inside.png"
 image bg coffe_outside = "Submods/To You Beyond the Stars/TYBS_Open World/images/bg/coffe_outside.png"
+image bg road_02 = "Submods/To You Beyond the Stars/TYBS_Open World/images/bg/road_02.png"
+image bg road_03 = "Submods/To You Beyond the Stars/TYBS_Open World/images/bg/road_03.png"
+
+
+
+
+#cg定义区
+image cg coffe_01 = "Submods/To You Beyond the Stars/TYBS_Open World/images/cg/coffe_01.png"
+image cg coffe_02 = "Submods/To You Beyond the Stars/TYBS_Open World/images/cg/coffe_02.png"
+image cg coffe_03 = "Submods/To You Beyond the Stars/TYBS_Open World/images/cg/coffe_03.png"
+image cg coffe_04 = "Submods/To You Beyond the Stars/TYBS_Open World/images/cg/coffe_04.png"

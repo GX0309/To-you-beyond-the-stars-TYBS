@@ -11,7 +11,14 @@ default persistent.find_new = 0
 default persistent.park_count = 0
 default persistent.lake_count = 0
 default persistent.read_letters = []
-
+default persistent.playground = False
+default persistent.playstore = False
+default persistent.road_count = 0
+default persistent.pg_count = 0
+default persistent.count = 0
+default persistent.playstore_count = 0
+default persistent.road_03_count = 0
+default persistent.coffe_count = 0
 
 init python:
     if not hasattr(store, "glitchtext"):
@@ -57,6 +64,17 @@ label return_default:
     $ persistent.park_count = 0
     $ persistent.lake_count = 0
     $ persistent.read_letters = []
+    $ persistent.playground = False
+    $ persistent.playstore = False
+    $ persistent.road_count = 0
+    $ persistent.pg_count = 0
+    $ persistent.count = 0
+    $ persistent.playstore_count = 0
+    $ persistent.road_03_count = 0
+    $ persistent.coffe_count = 0
+
     "变量已重置"
     return
-
+init 5 python:
+    if persistent.playground and persistent.playstore:
+        persistent.road_count = 1
