@@ -175,7 +175,7 @@ label Swallow_Homing:
             stop music
             pause 3.0
             call mas_transition_from_emptydesk()
-            m 1eubftpd "所以，时常来看看我, 做我的航标好吗亲爱的."
+            m 1eubftpd "所以，时常来看看我, 做我的航标好吗, 亲爱的."
             if mas_isMoniEnamored(higher=True):
                 if mas_shouldKiss:                        #这三行，表示触发亲吻。<400好感时不触发。
                     call monika_kissing_motion_short 

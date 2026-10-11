@@ -438,15 +438,18 @@ label ow_ps_ok:
     show monika 3p_gowm at t11
     with dissolve
     m "嗯... 让我准备一下..."
-    call updateconsole("launching game.exe", "Error")
+    if renpy.has_label("updateconsole"):
+        call updateconsole("launching game.exe", "Error")
     show monika 3g_gowm at t11
     with dissolve
     m "怎么会!"
     show monika 4f_gowm at t11
     with dissolve
     m "我再试一下..."
-    call updateconsole("Restarting...", "Error")
-    call hideconsole
+    if renpy.has_label("updateconsole"):
+        call updateconsole("Restarting...", "Error")
+    if renpy.has_label("hideconsole"):
+        call hideconsole
     show monika 7l_gowm at t11
     with dissolve
     m "啊, 看起来这里的游戏机坏了呢..."

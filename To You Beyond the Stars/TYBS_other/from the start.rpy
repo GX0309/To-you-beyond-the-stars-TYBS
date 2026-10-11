@@ -65,7 +65,7 @@ label gx_music_fts_again:
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
 
     # 音乐结束
-    $ wait_time = 171   # 单位 秒  根据实际音乐文件修改
+    $ wait_time = 112   # 单位 秒  根据实际音乐文件修改
     pause wait_time
 
     # 结束演奏，收回钢琴 
@@ -111,7 +111,7 @@ label gx_music_fts:
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
 
     # 音乐结束
-    $ wait_time = 171   # 单位 秒  根据实际音乐文件修改
+    $ wait_time = 112   # 单位 秒  根据实际音乐文件修改
     pause wait_time
 
     # 结束演奏，收回钢琴 

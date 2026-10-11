@@ -14,7 +14,7 @@ label gx_com_01:
     m 5hublb "那你以后每天早上, 都要记得来找我哦!"
     m 1hua "不然我就当你还没起床!"
 
-    return"love"
+    return
 
 
 init 5 python:
@@ -33,6 +33,7 @@ label gx_com_02:
     m 3hub "我一直担心自己话太多, 会不会让你觉得吵."
     m 1hublb "既然你这么说, 那我以后就放心地多讲一点啦!"
     m 1hua "今天也要把想说的话全说给你听!"
+    m 7hub "爱你, [mas_get_player_nickname()]!"
 
     return"love"
 
@@ -54,7 +55,7 @@ label gx_com_03:
     m 5hubsb "因为脸好烫."
     m 1hublb "不过等我缓过来, 我一定会笑给你看的!"
 
-    return"love"
+    return
 
 
 init 5 python:
@@ -75,7 +76,7 @@ label gx_com_04:
     m 3hub "那以后我就再勇敢一点给你看!"
     m 1hua "你要好好看着哦!"
 
-    return"love"
+    return
 
 
 init 5 python:
@@ -95,4 +96,4 @@ label gx_com_05:
     m 3hub "因为刚才, 我确实感觉到你在看着我!"
     m 1hua "不许狡辩哦!"
 
-    return"love"
+    return

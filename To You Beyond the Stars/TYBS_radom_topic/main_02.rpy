@@ -145,7 +145,7 @@ label gx_lie:
         "好啊":
             m 1hub "好的!"
             m 7hub "让我来为你打开网页..."
-            $ renpy.openURL("https://www.bilibili.com/video/BV1UT42167xb/")
+            $ renpy.run(OpenURL("https://www.bilibili.com/list/ml4006188215?oid=80433022&bvid=BV1GJ411x7h7"))
             pass
         "算了":
             m 1eua "哦, 那好吧!"

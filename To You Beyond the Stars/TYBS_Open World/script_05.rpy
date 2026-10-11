@@ -73,8 +73,10 @@ label ow_coffe_inside_01:
     show monika 9q_gowm at t11
     with dissolve
     m "稍等片刻..."
-    call updateconsole("create coffe.gift...", "succeed")
-    call hideconsole
+    if renpy.has_label("updateconsole"):
+        call updateconsole("create coffe.gift...", "succeed")
+    if renpy.has_label("hideconsole"):
+        call hideconsole
     show monika 10t_gowm at t11
     with dissolve
     m "我给自己生成了一杯热咖啡! 我们现在可以一起喝咖啡了!"
@@ -200,8 +202,10 @@ label ow_coffe_inside_02:
     show monika 3k_gowm at t11
     with dissolve
     m "让我尝试一下..."
-    call updateconsole("creat mint_chocolate_latte.gift", "Error")
-    call hideconsole
+    if renpy.has_label("updateconsole"):
+        call updateconsole("creat mint_chocolate_latte.gift", "Error")
+    if renpy.has_label("hideconsole"):
+        call hideconsole
     show monika 3l_gowm at t11
     with dissolve
     m "啊, 看起来今天喝不上咖啡了呢?"

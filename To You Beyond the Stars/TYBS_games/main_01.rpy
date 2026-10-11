@@ -282,4 +282,37 @@ label tybs_game_2048:
         m 1eua "这一局拿到了 [g2048.score] 分, 最高纪录还停在 [persistent.tybs_2048_best] 分."
 
     m 1hua "辛苦啦, 下次想玩随时来找我."
+    $ mas_unlockEVL("tybs_game_2048_01", "EVE")       # 解锁第二个事件注意事件标签，应与下面一致
+
     return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="tybs_game_2048_01",           # 初始锁定（依赖第一个事件解锁）
+            category=['游戏'],
+            prompt="2048",
+            pool=True,
+            unlocked=False,
+            rules={"no_unlock": None}
+        )
+    )
+label tybs_game_2048_01:
+
+    m 1eua "要不要陪我玩一局 2048 呀[player]?"
+    m 1hub "用方向键推动方块, 数字相同就会合并, 目标是合出 2048!"
+    m 1eub "用鼠标的话, 点屏幕上的方向按钮也可以, 按 R 随时重新开始."
+    m 1hua "放松一点, 输赢都不重要, 我就在旁边看着你."
+
+    $ g2048.reset()
+    call screen game_2048
+
+    if g2048.score >= persistent.tybs_2048_best and g2048.score > 0:
+        m 1wub "哇, [g2048.score] 分, 这是你的新纪录!"
+    else:
+        m 1eua "这一局拿到了 [g2048.score] 分, 最高纪录还停在 [persistent.tybs_2048_best] 分."
+
+    m 1hua "辛苦啦, 下次想玩随时来找我."
+    return
+
